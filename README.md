@@ -3,8 +3,21 @@ My simple quine programs : )
 
 Including normal quines and Ouroboros quines
 
+## Normal Quine
+I have implemented normal quine using different langages.
+
+Normal Quines will print its own source code.
+
+### C++ quine
+The C++ quine program `./normal_quine/str_replace.cpp` is implemented using std::string::replace.
+You could run the script `./normal_quine/check_output.sh` to verify.
+
 ## Ouroboros Quine
-I have implemented Ouroboros quine using different langages.
+I have implemented Ouroboros quine using different langages as well.
+
+Ouroboros Quines will print another source code written in different language, 
+which will print another source code as well. 
+Eventually, the original source code of first program will be printed.
 
 # C -> Python -> C
 
