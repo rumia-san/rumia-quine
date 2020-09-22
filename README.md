@@ -19,7 +19,7 @@ Ouroboros Quines will print another source code written in different language,
 which will print another source code as well. 
 Eventually, the original source code of first program will be printed.
 
-# C -> Python -> C
+### C -> Python -> C
 
 The C and Python Ouroboros quine is under folder `./ouroboros_quine/c_python/`
 
