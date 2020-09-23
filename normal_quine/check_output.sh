@@ -19,6 +19,13 @@ function compare_file() {
     sha1sum ${file1} ${file2}
 }
 
+function check_ruby_quine() {
+    echo -e "\n======================================\n"
+    color_echo 3 "Checking $1"
+    ruby $1 > ./output/$1
+    compare_file "$1" "./output/$1"
+}
+
 
 mkdir -p output
 
@@ -28,8 +35,7 @@ g++ str_replace.cpp -Wall -std=c++11 -o ./str_replace
 ./str_replace > ./output/str_replace.cpp
 compare_file "./str_replace.cpp" "./output/str_replace.cpp"
 
-echo -e "\n======================================\n"
-color_echo 3 "Checking eval.rb"
-ruby eval.rb > ./output/eval.rb
-compare_file "./eval.rb" "./output/eval.rb"
+check_ruby_quine "eval.rb"
+
+check_ruby_quine "str_format.rb"
 

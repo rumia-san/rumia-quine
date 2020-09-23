@@ -14,7 +14,8 @@ You could run the script `./normal_quine/check_output.sh` to verify.
 The C++ quine program `./normal_quine/str_replace.cpp` is implemented using std::string::replace.
 
 ### Ruby quine
-The Ruby quine program `./normal_quine/eval.rb` is implemented using eval.
+1. `./normal_quine/eval.rb` is implemented using eval.
+2. `./normal_quine/str_format.rb` is implemented using ruby string format.
 
 ## Ouroboros Quine
 I have implemented Ouroboros quine using different langages as well.
