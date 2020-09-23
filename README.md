@@ -8,9 +8,13 @@ I have implemented normal quine using different langages.
 
 Normal Quines will print its own source code.
 
+You could run the script `./normal_quine/check_output.sh` to verify.
+
 ### C++ quine
 The C++ quine program `./normal_quine/str_replace.cpp` is implemented using std::string::replace.
-You could run the script `./normal_quine/check_output.sh` to verify.
+
+### Ruby quine
+The Ruby quine program `./normal_quine/eval.rb` is implemented using eval.
 
 ## Ouroboros Quine
 I have implemented Ouroboros quine using different langages as well.
