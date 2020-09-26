@@ -21,6 +21,7 @@ function check_normal_quine() {
     compare_file "$1" "./output/$1"
 }
 
+check_normal_quine "printf.c"
 check_normal_quine "str_replace.cpp"
 check_normal_quine "eval.rb"
 check_normal_quine "str_format.rb"
