@@ -24,4 +24,5 @@ function check_normal_quine() {
 check_normal_quine "str_replace.cpp"
 check_normal_quine "eval.rb"
 check_normal_quine "str_format.rb"
+check_normal_quine "heredoc.rb"
 
