@@ -1,0 +1,4 @@
+require "base64"
+encoded_code="cmVxdWlyZSAiYmFzZTY0IgplbmNvZGVkX2NvZGU9IiMjIyIKZGVjb2RlZF9jb2RlPUJhc2U2NC5kZWNvZGU2NChlbmNvZGVkX2NvZGUpCnByaW50IGRlY29kZWRfY29kZS5zdWIhKC8jIyMvLGVuY29kZWRfY29kZSkK"
+decoded_code=Base64.decode64(encoded_code)
+print decoded_code.sub!(/###/,encoded_code)
