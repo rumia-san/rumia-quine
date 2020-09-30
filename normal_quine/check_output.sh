@@ -27,4 +27,5 @@ check_normal_quine "eval.rb"
 check_normal_quine "str_format.rb"
 check_normal_quine "heredoc.rb"
 check_normal_quine "base64.rb"
+check_normal_quine "eval2.rb"
 

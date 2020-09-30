@@ -21,6 +21,7 @@ The C++ quine program `./normal_quine/str_replace.cpp` is implemented using std:
 2. `./normal_quine/str_format.rb` is implemented using ruby string format.
 3. `./normal_quine/heredoc.rb` is implemented using ruby heredoc.
 4. `./normal_quine/base64.rb` is implemented using base64.
+5. `./normal_quine/eval2.rb` is implemented using eval as well, which is from [ta-chibana's ASCII quine](https://github.com/ta-chibana/hey_quine).
 
 ## Ouroboros Quine
 I have implemented Ouroboros quine using different langages as well.
