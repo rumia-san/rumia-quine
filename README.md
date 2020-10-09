@@ -1,7 +1,14 @@
 # rumia-quine
 My simple quine programs : )
 
-Including normal quines and Ouroboros quines
+Including normal quines, Ouroboros quines and ASCII Art quines.
+
+## ASCII Art Quine
+I have implemented a simple ASCII art quine program. The ruby program `./ascii_quine/rumia_ascii.rb` is implemented using eval and lambda. It is **not just an ASCII Art but also a Quine program**, which means the output of this program is its own source code. You could run the script `./ascii_quine/check_output.sh` to verify.
+
+Here is the screenshot:
+
+<img src="./ascii_quine/rumia_ascii.png" alt="Screenshot of the output of rumia_ascii.rb" width="50%" height="50%">
 
 ## Normal Quine
 I have implemented normal quine using different langages.
