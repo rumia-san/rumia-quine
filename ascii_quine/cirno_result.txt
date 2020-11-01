@@ -1,0 +1,518 @@
+$ cat cirno.rb 
+bitmap_index=1;eval$s=%w(s=%(bit                                                                                                
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+                                                                               m                                                
+                                                                            ap_in                                               
+                                                                         dex=#{(bi                                              
+                                                                       tmap_index+1                                             
+                                                                      )%3};eval$s=%                                             
+              w(#{$                                                 s})*"";);$print                                             
+             _8bits=->(str                                         ing,bitmap_char){                                            
+            bitmap=bitmap_char                                    .ord;mask=1<<7;i=0                                            
+            ;while(mask!=0);if(bi                                tmap&mask)!=0;print(                                           
+            string[i]);i+=1;else;pr                             int(32.chr);end;mask=                                           
+            mask>>1;end;return(i);};$p                         rint_line=->(string,bi                                           
+            tmap_line){index=0;bitmap_li                       ne.each_char{|char|ind                                           
+            ex+=$print_8bits[string[index                ..-1],char];};print("\n");re                                           
+            turn(index);};$print_bitmap=->(         string,          bitmap_string,lin                                          
+            e_len){index=0;while(!bitmap_str    ing.e  mp               ty?);index+=$p                                          
+             rint_line[string[index..-1],bitmap_stri  n              g    .slice!(0,li                                          
+             ne_len)];end;};base64_strs=['eJzF lU                           1 v3FQUho8                                          
+             /MnbIUA9qUY06iYclK4aC1AqF2hV/oM s sk                             L BgwZKp                                          
+              ItQRisZ3MmmDICgsu6hIF12whF3F                                       gtxRq4                                         
+              5AQPITHFEls6hSJzSKkzg+nHM9                                        M /n4A3                                         
+               hjP7pf557znteIiPB/PNo5d                                            sRZju                                         
+               TZ6RifYWPIRvF2hmyhWuhhM                                            t gXM3                                        
+               75J4x8UoTpiHklnuKMjz                                               v F  e                                        
+                J4FLT/NsRNbxTEFJwc C                                                    h                                       
+                mwR4y6Y/ik+pggmTv E                                             e       sZ                                      
+                4NL4bFDVonrD5+GyZi                                               s      PO                                      
+                Nc/zuiItMvDPIFOJ6             8                      SG          G/     L B                                     
+                AOeTiIxix0AFKED               4cc                     A6          GA      AP                                    
+                q9SHr48xuvdgSM7       0     q  QB                     NV           F4     xA                    s               
+                WlL0KTtQpm3xJQ        Z    krI  L                      9Z          pi2     5V                 gx V              
+                OmJhS/st0NGr98       y      Y   K6                     Gnf          f      oh               sk  r1              
+                1w5S017ro7oKW        W      H   kK                      Fud9        wG     8S             Gd      T             
+                +w1fzQbQI0tTE       o      OA   7d                   iLln1s        qcj/      V         4K         i             
+                cevytqJnM38S i      j      c1   ZnH    k                zOr5       S uL2   F u       Wsx          Xd            
+                K5HV1ZXM2gdxG      3Q      uZ  7d2P                     VQj+        K 4     a2s    sr   LY       k h            
+                ghiySL2C/7Wn 5     HB      Ar   AyiB   3               8zk9lY        BIj      t  oU                7            
+                Fb3ELJYBSBr v    iuY       0c    R4G                   OgRq/c         yH     Pv6C  cV    B          T           
+                /LuopCRfuocGN    T5        Pv    Jk4m                    ERxC          M     Q O         d          s           
+                TF1MEjGq+IC      sc        r3    ogj3Mc+                 ZbPg          9zs   suv     h    n         Gx          
+               y6X0d+SaJcf b    qRQ        ECcd 0TLS739                  5/FP       J  o1    r Wb         u          9          
+               7WdO73mjDzX     FAnHb       6r2YfaTDZUp0u                 7u6nx       tf9G     8/g     s              r          
+              HVJjuRnYn1xb      7X         21     qmgGw0Xm               SXcvh    WXh7  F       2     x    i          7         
+             ZujzMuhFO7tAo     wTz         2z9  e KUKutzbAfE2F           ejX7Qt OmQu1  Uwi8     e      b              g         
+            89kAV8gfFWVLSY     i7UY        0n      bQSlLrELY9yXr      x  XrRYA4MfHD     zJv     Nm     0    x          C        
+           qUZZYfuA8bSm28      F5N         8c      LXA55XCvbMQ0O         q+aLCep        kaS     zV                     m        
+          61iwvGDaTD+JwUu      Ibd         IH      XDfTGwl8njgH0q   b 8   Q1hK/R R WE   +e       x      t    H          V       
+         eMJZGqYaJl0pTCZQ      ZMP         Eb       0lQm56TUQlS/R   q Br  fODEIXV0FFP   9d       G           B          2       
+        cvKmqJvHNU01lLNKH      e1          3c      pYXB  +AcrOUqPLA E39D7qEcO5BxQaNypM  DXZ     oZ       b              3y      
+         I+kaqh8sk3m5K9Tjw     YU        gFF1     BAWw   JqAKAcVXvk 68tbEiIIQacaNuiTtp5  FE      L            8          /      
+          WoKS0xO3epSUpLK      EEl       2 kF     cbX z   gkzKzi3QmsbzaqH gx   SezKAimaev29      h        E              b      
+          p+WOCKwbyWgKfMmf  V  Kn          P    ovSo4      T0JVc2cwH0VhStEt5    ZsUpnqslT54      /+            L          o     
+           18Rmjv/g0Bmpp/      Ky          t 6 g0rhR        DH3+2lNEqU55kC24     qVtZYR8pOQ      7H                       a     
+            UNIxpXDEmiCr1     Zsj          N  sCnVM+N       uARkD05rxGXwYgp3x BUSC4W4OOQ6VZ      y4        h    1          s    
+             Fh+Bktr+zhS8L     Jv          P   LSz7      10GA+HYYwm3vHBWvM4j N08lyxoTxq82iZ L     I                        F    
+             ZVz+/Z8fLKBVz     gT         BZ  +ms     N24qVp6VLf69h8euwmY9f7yGunDB+/0SFi/8B     R wv        B               Ug==
+              ','eJyt1W1M     G2Uc       AP Dnes    jNSLiYzDEjeM14KTESm+G HgcNDs8Q   Y  HVl    jJjXK             V          gywb
+              E5ss4SxFX p     Xsx        iTGRHd    3DAy2MhAN4      OdNRGCrEd 8mwmTM  m  TuR     W n d        c              L4QR
+               glk3Mb1  H      p+      Xu2t H4j   fvU393vef/cs      /9D0II   wf9/CP  G   7yE    Eop 1             u         EMJF
+               GBiWhpz  l      TQ       ieUlB9ETL9BxFZTxkxb gIm      QE5Zt   hKkM7q G2   AvD  UVs o  C        t            R VQp
+               FZXWDM   t      rTB     lK iHDZkLMf9l IkDWtrCLmT       MN zK  6xaTtj D    lnE   5Q X  t             I     T    Dl
+                yR+4    ee     MC0A    PU16Hq+   WSF ybtATskuGR        Ti    dgVwgG B    0R4 Y GKoL  e7        n       j      Ot
+                P1r    Cb     Pmkn    jUsNRe/J    Kd bLX4BuNW6o         NH   hZ  Lx      43H   ZptGU  k             Q         q/
+                       Dx   Q   3Hbe7 pwO9d1Hp     5qNvm3hSobaP              x4  Vl     nzzp i lbbnQ  +                     +  1
+                       d Z cb   ArV  jpMO  M9nP    70 /a   OHQ                H fQ      WJWX 2 x/sXC   w        q         s    h
+                        1 UKf t m27 /vq     Cjq     shHz    cG                          6kFLYUdXgnCA   d                        
+                      55 J1X7   xTO/B W o   fMIM     T ++  +8R                          o8+ARh2HhdmvP   o  Z                    
+                      0Dh99wdl  L7W/         MP        zT9R                            gUzWE5dfz3 9vo   az            st        
+                     dA wiS/NJ  PfaL         +wr                                       2xXqJBZPzz  qa   r7        l             
+                     dz4Vip B7   pn1         nHs                         z            euuFzt5+PU5  x0/   a     u +     X        
+                     jrs+p+  2a  +c3x         zHe                                     re+Yvf0rbi/   zR   D                      
+                    6tHugc   N   /13jOP       ztQ                                    yN2w8JsTV/e0    fv   f                     
+                    1J6i5    p   PJvi F       nDv                                    uNa4Buh0Wtrz     S   +x                    
+                   iYvHK     P  /X7zR G       9Y32                                    mQ/3aDiRH/v          E        v           
+                   yYBS      9 vI26Za          uyF                                   usJq1EziT uO          f                    
+                  e3RP       t  i7tJ+    1 UoP  9iW                Ecvja+RhJ         PnqqvDGrh XW           y        o          
+                  gy4        P  kV01n     NPRYl r7E3             gi   GxYuDq        mUV1A9dCH  kBo          0             6     
+                 9T          d0 y9EEI     xwn/hR0HgdN           h 3Kj4Fby9GQ        UEzs5 E0S   /b          1         C         
+                             U cXgaBm    0PYIObG1QFQP          hbBZrbKOB1U0O       ZhfD/Tip2N   vL           0             m    
+                             h O+MYOc    CUFG9nRpQl2y           twZlkDmFvAKB      ssgFH4 vqx    nW           j         9        
+                            ySJs/ia2F   /tVnOl9z2N7AHhk         shRvzM5XaPpg     V+wM7qz kNl     x            1        d    R   
+                            D fGiBJKw D 8dPUU3kinuqmZton         PbsmAjRGjH     Nt+6fd7ANfq      Mc           z             r   
+                            J/ZFgbBUabr p+uObwP6Tlvf             0lI8Eu3bL     gB580/qO ykD       e            m        E       
+                            GQ6fC dU0BOleVC/2YF5G6zXLJ            zB3Kzab     bij/UKWBs 1z                     V             T  
+                            0HpNBhrk8  AHn  X0ZudbRF0+t                      BsE1LO2ot ml                    ZD6f        x      
+                           Ye72L  cMh7 nWt   q8ZoJ3z2uOTl                   BrgbVkhC1  7                  TXv   I             S 
+                           NR/N    a2Q kb     q8YC4n4xkVgTE                5ZV7v4kWF9                   ov      F         N     
+                        cJ36TiT    cTg OD      ZUDAoxSZ6A9zUI             lJ6lSZwO +                  kp         1             T
+                      eP   g1j      UWMCi       QZIz8MBAXNQsu56         Gu  HLJKB                  Hk9           z         E    
+                    jm    B3w       jsqEh       K9hrWtwjQDw  2Lce72    UY  G0AO3H                Fm               y        4    
+                 iie      fK         OLHF        E7L Qj6u4P3b    DESFTYy   isT8f               R8                 k             
+               Q2         0          aeZK        Ge8  OD HhA2Y     W 6   hnqj               eTw5aQlxiYHPBKnE       z        N   
+             zg                       Goa         T7  4  L8C      Ms M    4=','e          JyN1DFrFUEQAOC9bPAUx     H  tg        
+          8yC                         B+wE        WC  h  ZRC       N       nC1sJfIO     kstBAsRJDsWtkI/gAbO1sL6+   QE wdI    f  
+        kC                             IXl        SA   o3BXC              u5DLjTO7dzu7y3vq8prv9m7e7O7sAAAIGjMRj9S3  E m     8 nf
+      p5                                4L        /G QGFKbiB             l UIUzkEroMavZtgNAK13QMLX+N45Qtj+gBv19oax9/G+     L5Z  
+   87w                                   dv        Q3iF7IPse W           r 0ePC5Jl7AtqtIg9JO5XeM2lCz8S+3xHt6sMy91FbhKn8 4nPE    
+ g8                                                 6dn8N3of              uDrU35dd9hdj13g12r7pfQ+BWnzYfvBW6b+7O2LXu4ZVgVx       
+g                                                y8HAP/S m Y                n2lovrPP5woavz2iPH+kYdGxo+MTawoOAH/TB3heWGD         
+                                             7Z/6  8ttzxFZM f              0P6A/jgFa  BqchevV5A006Hf1ZPr+RL/wCT1EL7TxF/K        
+                                           OdTX3xu8XB/Wm9097            3Je9Dyl+d9E   v4A3Oqp59E4upmNLH8YSKa8dz/SlZcUPYIt9      
+                                        f975K3heh2/D+S/LO9P5juq     Ct     6LNxA2    pyJ3qcoEGPqfh74RZ0yTh3IjdkJagihqwTLgD1     
+                                      HbwxErdrl/zb+SWaKqakbcUT/IKm  gK   pypuMr      xdjGSlfeZLvrhfMVm53zUejczdMJV8ssOZ51xjbL   
+                                   LJy VmaytueVq2w7Y6r/MLb20nifeTOwr     hhY8        hM6tCxM795aJs6WWlQ9o75OsV1rb+7Yb2ojMx6MFo  
+                                  tu    VLqm//8U           FlaxMzf+fW    1ex         eT2upANn/7BIrclV6DqySlySOT9MOMofEzRCcs/CBNv
+                                IA      o13RvwB                      wg  th          6A==',];require"base64";require"zlib";zippe
+                               d_        str=Ba                       s  e64.        decode64(base64_strs[bitmap_index]);raw_str
+                              =Z          lib.inf                    lat e(zip       ped_str);s+='p=%q'+64.chr+base64_strs[0];$p
+                             ri           nt_bitma                  p[s, raw_st      r,128/8];print(64.chr);)*"";p=%q@eJzFlU1v3F
+                            QU             ho8/MnbI                 UA9qUY06iYcl     K4aC1AqF2hV/oMsskLBgwZKpItQRisZ3MmmDICgsu6h
+                           I               F12whF3Fg               txRq45AQPITHFE    ls6hSJzSKkzg+nHM9M/n4A3hjP7pf557znteIiPB/PN
+                          o5                dsRZjuTZ6              RifYWPIRvF2hmyh   WuhhMtgXM375J4  x8UoTpiHklnuKMjzvFeJ4FLT/Ns
+                         RN                 bxTEFJwcCh      m     wR4y6Y/ik+   pggm  TvEesZ4NL4bFDV onrD5+GyZisPONc/zuiItMvDPIFO
+                        J6                   8SGG/LBAOe      Ti   Ixix0AFKED4c   cA6 GAAPq9SHr4 8xuvdgSM70qQBNVF4xAsWlL0KTtQpm3x
+                        J                    QZkrIL9Zpi2         5Vg  xVOmJhS/s    t0NGr98yYK6 Gnffohskr11w5S017ro7oKWWHkKFud9wG
+                       8S                    GdT+w1fzQbQI        0t   T EoOA7diL    ln1sqcj/V4K icevytq JnM38Sijc1ZnHkzOr5SuL2Fu
+                      Ws                      xXdK5HV1ZXM2      gdx  G3 QuZ7d 2PV   Qj+K4a2ssrLYkhgh    iySL2C/7Wn5HBArAyiB38zk9
+                      l                       YBIjtoU7Fb3EL     JY   BS BrviuY 0c   R4GOgRq/cyHPv6      CcVBT/LuopCRfuocGNT5PvJk
+                     4m                       ERxCMQOdsTF1ME    j   Gq  +I  Cs cr3  ogj3Mc+ZbPg9z      ssuvhnGxy6X0d+SaJcfbqRQEC
+                     c                        d0TLS7395/FPJo1   r   Wb  u9  7Wd O7  3mjDzXFAnHb6      r2YfaTDZUp0u7u6nxtf9G8/gsr
+                    H                         VJjuRnYn1xb7X21q m    gG w0X   mSXcvhWXh7F2xi7ZujzM  uhFO7tAowTz2z9eKUKutzbAfE2Fej
+                    X                         7QtOmQu1Uwi8ebg89kA   V8 gfF    WVLSYi7UY0nbQSlLrELY9yXrxXrRYA4MfHDzJvNm0xCqUZZYfu
+@$ cat cirno.rb | ruby
+bitmap_index=2;eval$s=%w(s=%(bit                                                                                                
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+                                                           map_inde                                                             
+                                                     x=#{(bitmap_index+1)                                                       
+                                                  %3};eval$s=%w(#{$s})*"";);                                                    
+                                               $print_8bits=->(string,bitmap_ch                                                 
+                                             ar  ){bitmap=bitmap_char.ord;mask=1<<                                              
+                                           7;  i=0;while(mask!=0);if(bitmap&mask)!=0                                            
+                                          ;print(string[i]);i+=1;else;print(32.chr);e                                           
+                                        nd;mask=mask>>1;end;return(i);};$print_line=->(                                         
+                                       st ring,bitmap_line){index=0;bitmap_line.each_cha                                        
+                                      r {|char|index+=$print_8bits[string[index..-1],char                                       
+                                     ] ;};print("\n");return(index);};$print_bitmap=->(str                                      
+                                    ing,bitmap_string,line_len){index=0;while(!bitmap_strin                                     
+                                   g.empty?);index+=$print_line[string[index..-1],bitmap_str                                    
+                                  ing.slice!(0,line_len)];end;};base64_strs=['eJzFlU1v3FQUho8                                   
+                                  /MnbIUA9qUY06iYclK4aC1AqF2hV/oMsskLBgwZKpItQRisZ3MmmDICgsu6h                                  
+                                 IF12whF3FgtxRq45AQPITHFEls6hSJzSKkzg+nHM9M/n4A3hjP7pf557znteI                                  
+                                iPB/PNo5dsRZjuTZ6RifYWPIRvF2hmyhWuhhMtgXM375J4x8UoTpiHklnuKMjzv                                 
+                                FeJ4FLT/NsRNbxTEFJwcChmwR4y6Y/ik+pggmTvEesZ4NL4bFDVonrD5+GyZisPO                                
+                               Nc/zuiItMvDPIFOJ68SGG/LBAOeTiIxix0AFKED4ccA6GAAPq9SHr48xuvdgSM70q                                
+                               QBNVF4xAsWlL0KTtQpm3xJQZkrIL9Zpi25VgxVOmJhS/st0NGr98yYK6Gnffohskr1                               
+                              1w5S017ro7oKWWHkKFud9wG8SGdT+w1fzQbQI0tTEoOA7diLln1sqcj/V4KicevytqJn          M                   
+                             38Sijc1ZnHkzOr5SuL2FuWsxXdK5HV1ZXM2gdxG3QuZ7d2PVQj+K4a2ssrLYkhghiySL2C/7Wn5HB  A                   
+                             rAyiB38zk9lYBIjtoU7Fb3ELJYBSBrviuY0cR4GOgRq/cyHPv6CcVBT/LuopCRfuocGNT5PvJk4mERxC                   
+                             MQOdsTF1MEjGq+ICscr3ogj3Mc+ZbPg      9     z ss  uvhnGxy6X0d+SaJcfbqRQECcd0TLS73                   
+                            95/FPJo1rWbu97WdO73mjDzXFAnHb      6  r     2 Yf      aTDZUp0u7u6nxtf9G8/gsrHVJju                   
+                            RnYn1xb7X21qm gGw0XmSXcvh W X       h 7     F 2xi      7 Z ujzMuhFO7tAowTz2z9eKUK                   
+                           utzbAfE2FejX7QtOmQu1    U wi 8      e  b     g 89      k   AV8gfFWVLSYi7UY0nbQSlL                    
+                           rELY9yXrxXrRYA4MfHDz    JvN  m      0 xC     q UZ      Z      YfuA8bSm28F5N8cLXA5                    
+                          5XCvbMQ0Oq+aLCepk  a       S  z      V m6     1 iw      v  G     DaTD+JwUuIbdIHXD                     
+                          fTGwl8njgH0qb8Q    1    hK/R RW      E +ex    t H      Ve  M J     ZGqYaJl0pTCZQZ                     
+                          MPEb0lQm56TUQ   l S/    R qB r       f O D    E I X    V0  F F      P9dGB2cvKmqJv                     
+                         HNU01lL NKHe     1 3    c pY  XB        + A    c r O    Uq  P L      AE39D7qEcO5Bx                     
+                         QaNypMDXZoZb     3 y    I +  ka         q h8   sk3m5    K9  T  j      wYUgFF1BAWw                      
+                        JqAKAc VXvk       6 8   tb E   i      I IQ ac   aN  ui   Ttp5F  EL     8/ WoKS0xO3e                     
+                        pSUpLKEEl2kF c    bXz   g k    z      K  z i3   Qms  b   zaqHgx Sez    KA  imaev29h                     
+                        Ebp+WOC   Kwb y W gK    f M           m  f VK    n   P   ovSo4T  0J    Vc   2cwH0VhS                    
+                        tEt5ZsUpn qslT5   4/    + L   o1  8   R  m jv    /   g   0Bmpp/  Ky    t6   g0rhRDH3+                   
+                       2lNEqU55kC  2 4q  VtZ    YR8   p   O   Q 7H aU  N Ix  pX  DEmiCr  1Z    sjN  sCnVM+NuAR                  
+                       kD05rxG  Xw Y g  p  3   x B    U   S     C  4W  4 OO  Q6V Zy4h1s  Fh+   Bk   t r+zhS8LJ                  
+                      vPLSz710G A+HY Y  w  m   3 v H BW   v  M 4j N08  l y  xoT   x  q8  2 i   ZL   I FZVz+/Z8f                 
+                      LKBVzgTBZ+msN  2  4  q   Vp6   VL   f  6  9  h8  e u  wmY   9  f7  yGu   nD   B +/0SFi/8B                 
+                     RwvBUg==',' eJ  y  t 1W    1M        G  2 Uc  AP  D n  esj  NS  Li   Yz    DE j  eM14KTESm+                
+                     GHgcNDs8Q Y HV  l  j Jj  X K   Vg   yw    bE 5ss   4    Sx   F  X p  Xs    x  i TGRHd3DAy2M                
+                    hAN4Od N   R GC rE  d 8   m wm  TM   mTuR   W ndc  L4  Q Rgl  k  3Mb  1H    p  + Xu2tH4jfvU3                
+                   93vef/cs/9  D 0IIwf 9/ C   PG7  y E   Eo p  1u EMJ   F  G B i Wh pzlT  Qi    e  UlB 9ETL9BxFZ                
+                   Txkxb gImQ E5 ZthKk M  7   qG2  A v  DUVs   o  CtR VQ  pFZX W DM trTB  lK    i  HDZ kLMf9lIk                 
+                  DWtrCLmTMNz K6 xa Tt j  D   lnE  5    QXtI  TD  lyR  +  4ee  M C0 A PU1 6H    q +WSF ybtATsk                  
+                 uGRTidgVwg G B0R4YGKo L e7n jOt  P     1r C  b  Pmkn  j  UsN  R e/ J K d bL    X  4Bu NW6oNHh                  
+                  ZLx43HZ p t GUkQq /D x  Q  3Hb e7pw   O9d   1  H p5    q N   v m  3 hSo ba    Px 4Vlnzzpil                    
+                 bbnQ++1dZc b A rVj pM O  M  9nP 7  0  /aOH  QH fQ WJ W  X 2   x / s   XC  w   qsh  1U Kftm                     
+                 27/vqCjqsh H z cG  6k F  L  YUdXg  n  CAd55J1  X  7  x   TO  /BWo f   M I M   T+ + +8Ro                        
+                 8+ARh2Hhdm v PoZ0 Dh9 9  w  dlL 7   W/MPz   T 9   R g  U z   WE5dfz   39v oa  zs t d  A                        
+                  wiS/NJPfa L +wr2 xXq J  B  ZPzz  qa r 7l   dz4   V i  pB     7p n     1 nHs  ze u u  F                        
+                  zt5+PU5x0 /  a u +Xj r  s  +p+2  a + c3x   z     He re+Y     v  f     0 rbi  /z R D  6                        
+                   tHugcN/1 3j O P ztQ yN 2  w8J   sTV /e  0f      v   f1     J 6i5pPJ   v     iF n D  v                        
+                    uNa4Buh0Wt rzS+xiY vH K  P/X7 zRG 9Y  32       m Q/3      aDiR    H/ v E   vy YBS                           
+                     9vI26Za u  yFusJq  1 E  ziT  uO  fe3RP        t i7       t J       +1Uo  P9i  WEcv                         
+                   ja+RhJPnq q  vDG  rh X W  yo g y4  PkV01nNPR   Ylr7        E 3        giGx YuDqmUV1                          
+                  A9dCHkBo 0  69T d 0y9 E E  Ix wn/h R0HgdNh3Kj4F  by9        GQ         U Ez s5 E 0S/b                         
+                 1CUcX  ga Bm0P  YI ObG 1 Q  FQ PhbBZrbKOB1U0OZ hf            D/Tip2Nv   L 0m hO + MYOc                         
+               CUFG9    nRpQl 2  yt wZl kDm  FvA KBs  sgFH4vqxn  Wj         9yS Js/ia2F  /tVnOl9 z2N7 A                         
+              Hhks      hRvzM5Xa PpgV +wM7 q zk N lx  1dRDfGiBJ              K wD8dPUU3k inu   q mZ ton                         
+            PbsmA       jRG jHNt + 6 fd7 A N fqMc zr  J/ZFgbBU              a  brp+uOb  wP6T lvf  0  l                          
+           I8Eu3        bLgB58 0/ qO ykD emE GQ 6 fC   dU0BOle                 VC/2YF5  G6zX LJzB 3K z                          
+          abbi          j /UKW B  s1zVT0Hp N Bh r k8A  HnX0Zu                  dbRF0+t  BsE1 LO2o tm l                          
+        ZD6fx            Ye  7 2L cMh 7nWt q  8 Z oJ     3z2                   uOTlBr   gb VkhC 1   7                           
+        TXvIS            NR/Na  2 Qkb q8Y  C  4n4 xk                           VgTE5    Z V7  v4kWF 9                           
+        ovF              NcJ36T i T c TgO DZ  UDAoxS                            Z6A     9z UI l J6  l                           
+       SZw               O+kp1T e Pg1jU WMC i QZIz 8                                  M BA XNQs u5 6G                           
+      uHL                JKBHk9 zEj mB3 w jsq EhK9 h                                    rW twjQD w 2L                           
+     ce7                  2UY G 0A  O3HFm y4iiefKO L                                   H F E 7 LQ                               
+    j6u4                  P3bDES F  TY yi sT8f R8kQ2                                   0 aeZKG e8                               
+    ODH                   hA2YW6 h nqjeT w 5aQ lx iY                                  HPB KnEzNzg                               
+   Goa                    T74L 8 C M sM4 = ','eJy N1                                  DFr FUEQAO                                
+   C9b                    P AU x H t g 8 y CB+ wE   W                                Ch Z RCN nC                                
+  1sJ                     fIO  kst B A s RJ  Ds Wt kI                                /gAb O 1sL                                 
+  6+                      QEw d If k C I  X  lS Ao 3B                               XCu5DLj TO7                                 
+ dzu                      7y3 v q8 p r v 9m   7 e7O 7                               s AA A  IG                                  
+ jM                       R j 9 S3 E m 8  nf  p54L/GQ                           G  FKb i B lUI                                  
+Uzk                      Er o M av ZtgNAK 13   QMLX+N4                           5Qtj+gB v 19                                   
+oax                      9  /G+ L5 Z8 7wd vQ3  iF7I Pse                          Wr0ePC 5J l                                    
+7A                      tq  tIg 9J O5 XeM 2 l C z8S+3xHt                        6 s M y 9 1                                     
+Fb                     hK   n84nPE g  86d n 8N  3ofu Dr U                     35dd 9hdj13 g                                     
+1                       2   r7pfQ+ B WnzY f vBW  6b+7 O2 LX                  u4Z VgVxg y 8H                                     
+A                           P/SmYn2lovr P P   5  woav  z2i P               H+kYdGxo+ MTa w                                      
+o                           OAH/ TB3 he WGD   7Z  /6 8   t   t           zxFZ M f 0  P 6 A                                      
+/                           jgFa Bqc  hev V   5A  006 H f1     ZP      r+  RL/wC T1 EL  7                                       
+                            TxF/ KOd TX   3x  u 8  XB  / W       m90973    Je9 Dyl  +d9E                                        
+                             v4   A  3Oq p59   E4u  p   mN                 L H8Y S  Ka8                                         
+                             dz   /  S l ZcUP YI t  9f 975                 K3h   e h2/D                                         
+                             +S   / LO 9 P5 j  u qC  t6LNx                 A2p   yJ3q                                           
+                              co  EGPq fh74  R Z  0y  T h3                 Ij   dk J                                            
+                               a  gihq wT L  gD 1  Hbwx E                    r  d                                               
+                                   rl/ zb+S   WaKqakbcUT/IK                 mgK                                                 
+                                p  ypu M rxd   jGSlfeZLvrhfMVm5            3zUej                                                
+                                    cz   dMJ V8ssOZ51xjbLLJyVmaytu         eVq2w7                                               
+                                    Y6    r/MLb20nifeTOwrhhY8hM6tCxM      795aJs6WW                                             
+                                     lQ  9o75OsV1rb+7Yb2ojMx6MFotuVLqm  //8UFlaxMzf+f                                           
+                                       W1      exeT2upANn/7BIrclV6DqySlySOT9MOMofEzRCcs                                         
+                                     /CB         NvIAo13RvwBwgth6A==',];require"base64";r                                       
+                                   eq               uire"zlib";zipped_str=Base64.deco de 64(                                    
+                                 ba                   se64_strs[bitmap_index]);raw_str= Zl ib.                                  
+                                in                      flate(zipped_str);s+='p=%q'+6 4.chr+  ba                                
+                               se                         64_strs[0];$pri nt_bitmap[s,raw_ str,12                               
+                               8/                           8];print(64 .  chr);    )*""  ;p=%q@eJ                              
+z                             Fl                              U1v3FQUho8/   Mnb    IUA9qUY06iYclK4a                             
+C                            1Aq             F2h               V/oMsskLBg    w     ZKpItQRisZ3MmmD I                            
+C                            g              su6hI             F12whF3FgtxR         q 45AQPITHF Els6hS                           
+J                           zSK             kzg+ n            HM9M/ n4A3hj          P7pf557znteIi PB/P                          
+No                          5ds             RZju T            Z6RifYWPIRvF         2hmyhWuhhMtgXM375J4x                         
+8U                         oTpi            HklnuKM           jzvFeJ4FLT/NsR        NbxTEFJwcChmwR4y6Y/i                         
+k+                         pgg             mTvEesZ4          NL4bFDVonrD5+G       yZisPONc/zuiItMvDPIFOJ                        
+68S                        GG/             LBAOeTiI          xix0AFKED4ccA6       GAAPq9SHr48xuvdgSM70 q                        
+QBNV                      F4xA             sWlL0KTt          Qpm3xJQZkrIL9 Z      pi25VgxVOmJhS/st0NGr98yYK6Gnf                 
+ foh                      skr1             1w5S017r          o7oKWWHkKF  u d       9wG8SGdT+w1fz QbQI 0tTEoOA7di                
+ Lln                      1sqc            j/V4Kicev          ytqJnM38  Si  jc      1ZnHkzOr5SuL2FuWsxXdK5HV1ZXM2g               
+  dxG                    3QuZ7            d2PVQj+K4          a2ssrLYkhgh    i       ySL2C/7Wn5HBArAyiB38zk9lYBIjto              
+  U7F                    b3ELJ            Y BSBrvi           uY0cR4GOg      Rq      /cyHPv6CcVBT/LuopCRfu o    cGN              
+   T5P                   vJk4             mERxCMQO            dsTF1M    Ej  Gq       +ICscr3ogj3Mc+ZbPg9zssu   vhnG             
+   xy6X                  0d+S             aJcfbqRQ            E Cc     d  0TLS7       395/FPJo1rWbu97Wd O73m     jD             
+    zXF                  AnHb             6r2YfaTD                     ZUp0u 7u       6nxtf9G8/gsrHVJjuRnYn1x    b7X         21 
+     qmg                 Gw0X            mSXcvhWXh                     7F2xi 7Zu       jzMuhFO7tAowTz2 z9 eKU    Kut     zbAfE2F
+     ejX7                QtOm            Qu1Uwi8eb                    g89kA V8gf        FWVLSYi7UY0nbQ  SlLrEL   Y9y   XrxXrRYA4
+@$ cat cirno.rb | ruby | ruby
+bitmap_index=0;eval$s=%w(s=%(bit                                           m                                                    
+                                                                           a                                                    
+                                                                          p_i                                                   
+                                                                          ndex                                                  
+                                                                         =#{(b                                                  
+                                                                         itmap_                                                 
+                                                                        index+1                                                 
+                                                                        )%3};eva                                                
+                                                                        l$s=%w(#{                                               
+                                                                       $s})*"";);$                                              
+                                               print_8bit              s=->(string                                              
+                                           ,bitmap_char){bitm          ap=bitmap_ch                                             
+                                          ar.  ord;mask=1<<7;i=0       ;while(mask!                                             
+                                  =0);if(bitmap&mask)!=0;print(stri    ng[i]);i+=1;e                                            
+                               lse;print(32.chr);end;mask=mask>>1;end  ;return(i);};                                            
+                              $pri nt_line=->(string,bitmap_line){index=0;bitmap_li                                             
+                            ne.e ach_char{|char|index+=$print_8bits[string[index..                                              
+                          -1],  char];};print("\n");return(index);};$print_bitmap=-                                             
+                         >(st  ring,bitmap_string,line_len){index=0;while(!bitmap_string. e                                     
+                        mpt   y?);index+=$print_line[string[index..-1],bitmap_string.slice!                                     
+                       (0,   line_len)];end;};base64_strs=['eJzFlU1v3FQUho8/MnbIUA9qUY06iYc                                     
+                      lK4   aC1AqF2hV/oMsskLBgwZKpItQRisZ3MmmDICgsu6hIF12whF3FgtxRq45AQPI                                       
+                      TH   FEls6hSJzSKkzg+nHM9M/n4A3hjP7pf557znteIiPB/PNo5dsRZjuTZ6RifYWP                                       
+                     IR   vF2hmyhWuhhMtgXM375J4x8UoTpiHklnuKMjzvFeJ4FLT/NsRNbxTEFJwcChmw                                        
+                     R4   y6Y/ik+pggmTvEesZ4NL4bFDVonrD5+GyZisPONc/zuiItMvDPIFOJ68SGG/L                                         
+                     BA   OeTiIxix0AFKED4ccA6GAAPq9SHr48xuvdgSM70qQBNVF4xAsWlL0KTtQpm3                                          
+                     xJ   QZkrIL9Zpi25VgxVOmJhS/st0NGr98yYK6Gnffohskr11w5S017ro7oKWWHk                                          
+                      K  Fud9wG8SGdT+w1fzQbQI0tTEoOA7diLln1sqcj/V4KicevytqJnM38Sijc 1                                           
+                      Z  nHkzOr5SuL2FuWsxXdK5HV1ZXM2gdxG3QuZ7d2PVQj+K4a2ssrLYkhghiy                                             
+                         SL2C/7Wn5HBArAyiB38zk9lYBIjtoU7Fb3ELJYBSBrviuY0cR4GOgRq/cyH                                            
+                         Pv6CcVBT/LuopCRfuocGNT5PvJk4mERxCMQOdsTF1MEjGq+ICscr3ogj3Mc                                            
+                        +ZbPg9zssuvhnGxy6X0d+SaJcfbqRQECcd0TLS7395/FPJo1rWbu97WdO73m                                            
+                        jDzXFAnHb6r2YfaTDZUp0u7u6nxtf9G8/gsrHVJjuRnYn1xb7X21qmgGw0XmS                                           
+                        XcvhWXh7F2xi7ZujzMuhFO7tAowTz2z9eKUKutzbAfE 2FejX7QtOmQu1Uwi8                                           
+                        ebg89kAV8gfFWVLSYi7UY0nbQSlLrELY9yXrxXrRYA4MfHDzJvNm0xCqUZZYf                                           
+                        uA8bSm28F5N8cLXA55XCvbMQ0Oq+aLCepkaSzVm61iwvGDaTD+JwUuIbdIHXD                                           
+                        fTGwl8njgH0qb8Q1hK/RRWE+extHVeMJZGqYa Jl0pTCZQZMPEb0lQm56TUQl                                           
+                        S/RqBrfODEIXV0FFP9dGB2cvKmqJvHNU01lLNKH  e13cpYXB+AcrOUqPLAE3                                           
+                        9D7qEcO5BxQaNypMDXZoZb3yI+kaqh8sk3m5K9    T j wYUgFF1BAWw Jq                                            
+                        AKAcVXvk68tbEiIIQacaNuiTtp5FEL8/WoKS0   xO 3e pS UpLKEEl2 kF                                            
+                         cbXzgkzKzi3QmsbzaqHgxSezKAimaev29hEb   p+W   O CKwbyWgKf Mm                                            
+                         fVKnPovSo4T0JVc2cwH0VhStEt5ZsUpnqslT   54/      +Lo18R   mj                                            
+                         v/g0Bmpp/Kyt6g0rhRDH3    +2lNEqU55kC   24q Vt  ZYR8pOQ   7H                                            
+                         aUNIxpXDEmiCr1ZsjNs     CnVM+NuARkD0  5rxG XwYgp 3x B    US                                            
+                          C4W4OOQ6VZy4h1sFh+     Bktr+zhS8LJvP  LSz 710G A  +H     Y                                            
+                          Ywm3vHBWvM4jN08ly      xoTxq82iZLIFZ  Vz+/Z8fLK   BV                                                  
+                          zgTBZ+msN24qVp6V       Lf69h8euwmY9f7yGunDB+/0S   Fi                                                  
+                          /8BRwvBUg==',  ' e     Jyt1W1MG2UcAPDnesjNSLiYzD   E                                                  
+                          jeM14KTESm+GHg   c     NDs8QYHVljJjXKVgyw bE5ss4S  x                                                  
+                          FXpXsxiTGRHd 3   DA     y2MhAN4OdNRGCrEd8 mwmTMmTu                                                    
+                           RWndcL4QRgl k 3M b1   Hp+Xu2tH4jfvU393vef /cs/9D0I                                                   
+                           Iwf9/CPG7yEEop1uEMJFGBiWhpzlTQieUlB9ETL9BxFZTxkxbgImQ                                                
+                      E   5ZthKkM7qG2AvDU VsoCtRVQpFZXWDMtrTBlKiH DZkLMf9lIkDWtrCLmT                                            
+                     MN   zK6xaTtjDlnE5QXt ITDlyR+4eeMC0APU16Hq+W SFybt ATsku GRTidgVw                                          
+                      g   GB 0R4YGKoLe7njOtP1rCbPmknjUsNRe/JKdbLX4BuNW6oNHhZLx      43HZ                                        
+                      p  tG  UkQq/DxQ3Hbe7pwO9d1Hp5qNvm3hSobaPx 4Vlnzzpi lbbnQ++1d     Z                                        
+                        cbA rVjpMOM 9nP70/aOHQHfQWJWX2x/sXCwqs  h1UKftm2  7 /vqCjq                                              
+                           sh HzcG6 kFLYUdXgnCAd55J1X7xTO/BWofMI MT+++8Ro 8  +ARh2H                                             
+                          hd mvPoZ0Dh99wdlL7W/MPzT9RgUzWE5d  fz  39voazst      dAwiS                                            
+                         /N J PfaL+wr2xXqJBZPzzqar7ldz4VipB7 pn1 nHszeuuF         zt5                                           
+                         +    PU5x0/au+Xjrs+p+2a+c3xzHere+Yv f0r bi/zRD6tH         ug                                           
+                         c    N/13j OPztQyN2w8JsTV/e0fvf1J6i 5pPJ viFnDvuNa        4Bu                                          
+                         h    0Wtrz S +xiYvHKP/X7zRG9Y32mQ/3aDiRH/vEvyYBS9vI        26                                          
+                         Z    auyF us Jq1EziTuOfe3RPti7tJ+1UoP9i WEcvja+RhJPn       q                                           
+                              q v  DG rhXWyogy4PkV01nNPRYlr7      E3giGxYuDqmU      V                                           
+                              1   A9  dCHkBo069Td0y9EEIxwn/         hR0HgdNh3K                                                  
+                                 j4F  by9GQUEzs5E0S/b1CUcXg               aBm0P                                                 
+                             Y   IOb G1QFQPhbBZrbKOB1U0OZhf               D/Tip2  NvL                                           
+                                  0m hO+MYOcCUFG9nRpQl2ytwZ              l kDmF      v                                          
+                                   A  KBssgFH4vqxnWj9ySJs/i             a 2F/tV                                                 
+                                   n  Ol9z2N7AHhkshRvzM5XaPp            gV+wM7q                                                 
+                                      zkNlx1dRDfGiBJKwD8dPUU              3kinu      q                                          
+                 mZt                   onPbsmAjRGjHNt+6fd7AN            fqMczr         J/Z                                      
+                Fgb                    BUabrp+uObwP6Tlvf0lI8E           u3bLgB           580                                    
+               /qO                      ykDemEGQ6fCdU0BOleVC/2          YF5G6z             XLJ                                  
+            z  B3                       Kzabbij/UKWBs1zVT0HpNB          hrk8A                HnX0                               
+          ZudbRF                         0+tBsE1LO2otmlZD6fxYe7        2LcMh7                  nWt                              
+         q8ZoJ3                           z2uOTlBrgbVkhC17TXvISN      R/Na2Q                     kb                             
+        q8YC 4                            n4xkVgTE5ZV7v4kWF9ovFNc    J36TiTc                      Tg                            
+   ODZUDAox                                SZ6A9zUIlJ6lSZwO+kp1TeP  g1jUWMCi                       QZI                          
+  z8MBAXNQ                                 su56GuHLJKBHk9zEjmB3wjsqEhK9hrWtw                       jQDw2                        
+ Lce72                                     UYG0AO3HFmy4iiefKOLHFE7LQj6u4P3bDE                      SFTYy                        
+isT8                                        fR8kQ20aeZKGe8ODHhA2YW6hnqjeTw5aQ                       lxi                         
+YHP                                         BKnEzNzgGoaT74L8CMsM4= ','eJyN1DF                       rFU                         
+EQA                                          OC9bPAUxHtg8yCB+wEWChZRCNnC1sJfI                       Okst                        
+BA                                           sRJDsWtkI/gAbO1sL6+QEwdIfkCIXlSA                       o3BX                        
+Cu                                            5DLjTO7dzu7y3vq8prv9m7e7O7sAAAI                      GjMRj                        
+9S                                             3Em8nfp54L/GQGFKbiBlUIUzkEroMa                      vZtgN                        
+A                                              K13QMLX+N45Qtj+gBv19oax9/G+L5Z                      87wdv                        
+Q                                               3iF7IPseWr0ePC5Jl7AtqtIg9JO5X                     eM2lCz8                       
+S                                                +3xHt6sMy91FbhKn84nPEg86dn8N                     3ofu                          
+                                                 DrU35dd9hdj13g12r7pfQ+BWnzYfv                    BW6b                          
+                                                  +7O2LXu4ZVgVxgy8HAP/SmYn2lov                    rPP5                          
+                                                  woavz2iPH+kYdGxo+MTawoOAH/TB                    3heW                          
+                                                  GD7Z/68ttzxFZMf0P6A/jgFaBqch                     e                            
+                                                   vV5A006Hf1ZPr+RL/wCT1EL7TxF                     /K                           
+                                                   OdTX3xu8XB/Wm90973Je9Dyl+d9                     Ev4                          
+                                                   A3Oqp59E4upmNLH8YSKa8dz/SlZ                      cU                          
+                                                    PYIt9f975K3heh2/D+S/LO9P5ju                     qC                          
+                                                     t6LNxA2pyJ3qcoEGPqfh74RZ0y                     Th3Ij                       
+                                                     dkJagihqwTLgD1HbwxErdrl/zb                      +SWa                       
+                                                      KqakbcUT/IKmgKpypuMrxdjGS                      lfeZ                       
+                                                       LvrhfMVm53zUejczdMJV8ssO                      Z51x                       
+                                                       jbLLJyVmaytueVq2w7Y6r/ML                       b20n                      
+                                                        ifeTOwrhhY8hM6tCxM795aJs                      6WWlQ                     
+                                                        9o75OsV1rb+7Yb2ojMx6MFot                      uVLqm                     
+                                                         //8UFlaxMzf+fW1exeT2upA                         Nn                     
+                                                         /7BIrclV6DqySlySOT9MOMof                      Ez                       
+                                                          RCcs/CBNvIAo13RvwBwgth6                      A==',                    
+                                                          ];require"base64";requi                      re"zl                    
+                                                           ib";zipped_str=Base64.d                     ecode                    
+                                                           64(base64_strs[bitmap_i                     ndex]                    
+                                                            );raw_str=Zlib.inflate(                   zipped                    
+                                                            _str);s+='p=%q'+64.chr+                   base6                     
+                                                             4_strs[0];$print_bitma                   p[s,                      
+                                                             raw_str,128/8];print(6                  4.ch                       
+                                                              r);)*"";p=%q@eJzFlU1v3                 FQUh                       
+                                                               o8/MnbIUA9qUY06iYclK4                 aC1A                       
+                                                               qF2hV/oMsskLBgwZKpItQ                 RisZ                       
+                                                                3MmmDICgsu6hIF12whF3                 Fgtx                       
+                                                                 Rq45AQPITHFEls6hSJz                 SKkzg                      
+                                                                 +nHM9M/n4A3hjP7pf5                  57znt                      
+                                                                  eIiPB/PNo5dsRZjuT                  Z6Rif                      
+                                                                   YWPIRvF2hmyhWuhh                  MtgXM3                     
+                                                                    75J4x8UoTpiHkln                   uKMjzv                    
+                                                                     FeJ4FLT/NsRN                     bxTEFJw                   
+                                                                      cChmwR4y6Y/ik+                  pggmTvE                   
+                                                                        esZ4NL4bFDVo                   nrD5+G                   
+@$ cat cirno.rb | ruby | ruby | ruby
+bitmap_index=1;eval$s=%w(s=%(bit                                                                                                
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+                                                                               m                                                
+                                                                            ap_in                                               
+                                                                         dex=#{(bi                                              
+                                                                       tmap_index+1                                             
+                                                                      )%3};eval$s=%                                             
+              w(#{$                                                 s})*"";);$print                                             
+             _8bits=->(str                                         ing,bitmap_char){                                            
+            bitmap=bitmap_char                                    .ord;mask=1<<7;i=0                                            
+            ;while(mask!=0);if(bi                                tmap&mask)!=0;print(                                           
+            string[i]);i+=1;else;pr                             int(32.chr);end;mask=                                           
+            mask>>1;end;return(i);};$p                         rint_line=->(string,bi                                           
+            tmap_line){index=0;bitmap_li                       ne.each_char{|char|ind                                           
+            ex+=$print_8bits[string[index                ..-1],char];};print("\n");re                                           
+            turn(index);};$print_bitmap=->(         string,          bitmap_string,lin                                          
+            e_len){index=0;while(!bitmap_str    ing.e  mp               ty?);index+=$p                                          
+             rint_line[string[index..-1],bitmap_stri  n              g    .slice!(0,li                                          
+             ne_len)];end;};base64_strs=['eJzF lU                           1 v3FQUho8                                          
+             /MnbIUA9qUY06iYclK4aC1AqF2hV/oM s sk                             L BgwZKp                                          
+              ItQRisZ3MmmDICgsu6hIF12whF3F                                       gtxRq4                                         
+              5AQPITHFEls6hSJzSKkzg+nHM9                                        M /n4A3                                         
+               hjP7pf557znteIiPB/PNo5d                                            sRZju                                         
+               TZ6RifYWPIRvF2hmyhWuhhM                                            t gXM3                                        
+               75J4x8UoTpiHklnuKMjz                                               v F  e                                        
+                J4FLT/NsRNbxTEFJwc C                                                    h                                       
+                mwR4y6Y/ik+pggmTv E                                             e       sZ                                      
+                4NL4bFDVonrD5+GyZi                                               s      PO                                      
+                Nc/zuiItMvDPIFOJ6             8                      SG          G/     L B                                     
+                AOeTiIxix0AFKED               4cc                     A6          GA      AP                                    
+                q9SHr48xuvdgSM7       0     q  QB                     NV           F4     xA                    s               
+                WlL0KTtQpm3xJQ        Z    krI  L                      9Z          pi2     5V                 gx V              
+                OmJhS/st0NGr98       y      Y   K6                     Gnf          f      oh               sk  r1              
+                1w5S017ro7oKW        W      H   kK                      Fud9        wG     8S             Gd      T             
+                +w1fzQbQI0tTE       o      OA   7d                   iLln1s        qcj/      V         4K         i             
+                cevytqJnM38S i      j      c1   ZnH    k                zOr5       S uL2   F u       Wsx          Xd            
+                K5HV1ZXM2gdxG      3Q      uZ  7d2P                     VQj+        K 4     a2s    sr   LY       k h            
+                ghiySL2C/7Wn 5     HB      Ar   AyiB   3               8zk9lY        BIj      t  oU                7            
+                Fb3ELJYBSBr v    iuY       0c    R4G                   OgRq/c         yH     Pv6C  cV    B          T           
+                /LuopCRfuocGN    T5        Pv    Jk4m                    ERxC          M     Q O         d          s           
+                TF1MEjGq+IC      sc        r3    ogj3Mc+                 ZbPg          9zs   suv     h    n         Gx          
+               y6X0d+SaJcf b    qRQ        ECcd 0TLS739                  5/FP       J  o1    r Wb         u          9          
+               7WdO73mjDzX     FAnHb       6r2YfaTDZUp0u                 7u6nx       tf9G     8/g     s              r          
+              HVJjuRnYn1xb      7X         21     qmgGw0Xm               SXcvh    WXh7  F       2     x    i          7         
+             ZujzMuhFO7tAo     wTz         2z9  e KUKutzbAfE2F           ejX7Qt OmQu1  Uwi8     e      b              g         
+            89kAV8gfFWVLSY     i7UY        0n      bQSlLrELY9yXr      x  XrRYA4MfHD     zJv     Nm     0    x          C        
+           qUZZYfuA8bSm28      F5N         8c      LXA55XCvbMQ0O         q+aLCep        kaS     zV                     m        
+          61iwvGDaTD+JwUu      Ibd         IH      XDfTGwl8njgH0q   b 8   Q1hK/R R WE   +e       x      t    H          V       
+         eMJZGqYaJl0pTCZQ      ZMP         Eb       0lQm56TUQlS/R   q Br  fODEIXV0FFP   9d       G           B          2       
+        cvKmqJvHNU01lLNKH      e1          3c      pYXB  +AcrOUqPLA E39D7qEcO5BxQaNypM  DXZ     oZ       b              3y      
+         I+kaqh8sk3m5K9Tjw     YU        gFF1     BAWw   JqAKAcVXvk 68tbEiIIQacaNuiTtp5  FE      L            8          /      
+          WoKS0xO3epSUpLK      EEl       2 kF     cbX z   gkzKzi3QmsbzaqH gx   SezKAimaev29      h        E              b      
+          p+WOCKwbyWgKfMmf  V  Kn          P    ovSo4      T0JVc2cwH0VhStEt5    ZsUpnqslT54      /+            L          o     
+           18Rmjv/g0Bmpp/      Ky          t 6 g0rhR        DH3+2lNEqU55kC24     qVtZYR8pOQ      7H                       a     
+            UNIxpXDEmiCr1     Zsj          N  sCnVM+N       uARkD05rxGXwYgp3x BUSC4W4OOQ6VZ      y4        h    1          s    
+             Fh+Bktr+zhS8L     Jv          P   LSz7      10GA+HYYwm3vHBWvM4j N08lyxoTxq82iZ L     I                        F    
+             ZVz+/Z8fLKBVz     gT         BZ  +ms     N24qVp6VLf69h8euwmY9f7yGunDB+/0SFi/8B     R wv        B               Ug==
+              ','eJyt1W1M     G2Uc       AP Dnes    jNSLiYzDEjeM14KTESm+G HgcNDs8Q   Y  HVl    jJjXK             V          gywb
+              E5ss4SxFX p     Xsx        iTGRHd    3DAy2MhAN4      OdNRGCrEd 8mwmTM  m  TuR     W n d        c              L4QR
+               glk3Mb1  H      p+      Xu2t H4j   fvU393vef/cs      /9D0II   wf9/CP  G   7yE    Eop 1             u         EMJF
+               GBiWhpz  l      TQ       ieUlB9ETL9BxFZTxkxb gIm      QE5Zt   hKkM7q G2   AvD  UVs o  C        t            R VQp
+               FZXWDM   t      rTB     lK iHDZkLMf9l IkDWtrCLmT       MN zK  6xaTtj D    lnE   5Q X  t             I     T    Dl
+                yR+4    ee     MC0A    PU16Hq+   WSF ybtATskuGR        Ti    dgVwgG B    0R4 Y GKoL  e7        n       j      Ot
+                P1r    Cb     Pmkn    jUsNRe/J    Kd bLX4BuNW6o         NH   hZ  Lx      43H   ZptGU  k             Q         q/
+                       Dx   Q   3Hbe7 pwO9d1Hp     5qNvm3hSobaP              x4  Vl     nzzp i lbbnQ  +                     +  1
+                       d Z cb   ArV  jpMO  M9nP    70 /a   OHQ                H fQ      WJWX 2 x/sXC   w        q         s    h
+                        1 UKf t m27 /vq     Cjq     shHz    cG                          6kFLYUdXgnCA   d                        
+                      55 J1X7   xTO/B W o   fMIM     T ++  +8R                          o8+ARh2HhdmvP   o  Z                    
+                      0Dh99wdl  L7W/         MP        zT9R                            gUzWE5dfz3 9vo   az            st        
+                     dA wiS/NJ  PfaL         +wr                                       2xXqJBZPzz  qa   r7        l             
+                     dz4Vip B7   pn1         nHs                         z            euuFzt5+PU5  x0/   a     u +     X        
+                     jrs+p+  2a  +c3x         zHe                                     re+Yvf0rbi/   zR   D                      
+                    6tHugc   N   /13jOP       ztQ                                    yN2w8JsTV/e0    fv   f                     
+                    1J6i5    p   PJvi F       nDv                                    uNa4Buh0Wtrz     S   +x                    
+                   iYvHK     P  /X7zR G       9Y32                                    mQ/3aDiRH/v          E        v           
+                   yYBS      9 vI26Za          uyF                                   usJq1EziT uO          f                    
+                  e3RP       t  i7tJ+    1 UoP  9iW                Ecvja+RhJ         PnqqvDGrh XW           y        o          
+                  gy4        P  kV01n     NPRYl r7E3             gi   GxYuDq        mUV1A9dCH  kBo          0             6     
+                 9T          d0 y9EEI     xwn/hR0HgdN           h 3Kj4Fby9GQ        UEzs5 E0S   /b          1         C         
+                             U cXgaBm    0PYIObG1QFQP          hbBZrbKOB1U0O       ZhfD/Tip2N   vL           0             m    
+                             h O+MYOc    CUFG9nRpQl2y           twZlkDmFvAKB      ssgFH4 vqx    nW           j         9        
+                            ySJs/ia2F   /tVnOl9z2N7AHhk         shRvzM5XaPpg     V+wM7qz kNl     x            1        d    R   
+                            D fGiBJKw D 8dPUU3kinuqmZton         PbsmAjRGjH     Nt+6fd7ANfq      Mc           z             r   
+                            J/ZFgbBUabr p+uObwP6Tlvf             0lI8Eu3bL     gB580/qO ykD       e            m        E       
+                            GQ6fC dU0BOleVC/2YF5G6zXLJ            zB3Kzab     bij/UKWBs 1z                     V             T  
+                            0HpNBhrk8  AHn  X0ZudbRF0+t                      BsE1LO2ot ml                    ZD6f        x      
+                           Ye72L  cMh7 nWt   q8ZoJ3z2uOTl                   BrgbVkhC1  7                  TXv   I             S 
+                           NR/N    a2Q kb     q8YC4n4xkVgTE                5ZV7v4kWF9                   ov      F         N     
+                        cJ36TiT    cTg OD      ZUDAoxSZ6A9zUI             lJ6lSZwO +                  kp         1             T
+                      eP   g1j      UWMCi       QZIz8MBAXNQsu56         Gu  HLJKB                  Hk9           z         E    
+                    jm    B3w       jsqEh       K9hrWtwjQDw  2Lce72    UY  G0AO3H                Fm               y        4    
+                 iie      fK         OLHF        E7L Qj6u4P3b    DESFTYy   isT8f               R8                 k             
+               Q2         0          aeZK        Ge8  OD HhA2Y     W 6   hnqj               eTw5aQlxiYHPBKnE       z        N   
+             zg                       Goa         T7  4  L8C      Ms M    4=','e          JyN1DFrFUEQAOC9bPAUx     H  tg        
+          8yC                         B+wE        WC  h  ZRC       N       nC1sJfIO     kstBAsRJDsWtkI/gAbO1sL6+   QE wdI    f  
+        kC                             IXl        SA   o3BXC              u5DLjTO7dzu7y3vq8prv9m7e7O7sAAAIGjMRj9S3  E m     8 nf
+      p5                                4L        /G QGFKbiB             l UIUzkEroMavZtgNAK13QMLX+N45Qtj+gBv19oax9/G+     L5Z  
+   87w                                   dv        Q3iF7IPse W           r 0ePC5Jl7AtqtIg9JO5XeM2lCz8S+3xHt6sMy91FbhKn8 4nPE    
+ g8                                                 6dn8N3of              uDrU35dd9hdj13g12r7pfQ+BWnzYfvBW6b+7O2LXu4ZVgVx       
+g                                                y8HAP/S m Y                n2lovrPP5woavz2iPH+kYdGxo+MTawoOAH/TB3heWGD         
+                                             7Z/6  8ttzxFZM f              0P6A/jgFa  BqchevV5A006Hf1ZPr+RL/wCT1EL7TxF/K        
+                                           OdTX3xu8XB/Wm9097            3Je9Dyl+d9E   v4A3Oqp59E4upmNLH8YSKa8dz/SlZcUPYIt9      
+                                        f975K3heh2/D+S/LO9P5juq     Ct     6LNxA2    pyJ3qcoEGPqfh74RZ0yTh3IjdkJagihqwTLgD1     
+                                      HbwxErdrl/zb+SWaKqakbcUT/IKm  gK   pypuMr      xdjGSlfeZLvrhfMVm53zUejczdMJV8ssOZ51xjbL   
+                                   LJy VmaytueVq2w7Y6r/MLb20nifeTOwr     hhY8        hM6tCxM795aJs6WWlQ9o75OsV1rb+7Yb2ojMx6MFo  
+                                  tu    VLqm//8U           FlaxMzf+fW    1ex         eT2upANn/7BIrclV6DqySlySOT9MOMofEzRCcs/CBNv
+                                IA      o13RvwB                      wg  th          6A==',];require"base64";require"zlib";zippe
+                               d_        str=Ba                       s  e64.        decode64(base64_strs[bitmap_index]);raw_str
+                              =Z          lib.inf                    lat e(zip       ped_str);s+='p=%q'+64.chr+base64_strs[0];$p
+                             ri           nt_bitma                  p[s, raw_st      r,128/8];print(64.chr);)*"";p=%q@eJzFlU1v3F
+                            QU             ho8/MnbI                 UA9qUY06iYcl     K4aC1AqF2hV/oMsskLBgwZKpItQRisZ3MmmDICgsu6h
+                           I               F12whF3Fg               txRq45AQPITHFE    ls6hSJzSKkzg+nHM9M/n4A3hjP7pf557znteIiPB/PN
+                          o5                dsRZjuTZ6              RifYWPIRvF2hmyh   WuhhMtgXM375J4  x8UoTpiHklnuKMjzvFeJ4FLT/Ns
+                         RN                 bxTEFJwcCh      m     wR4y6Y/ik+   pggm  TvEesZ4NL4bFDV onrD5+GyZisPONc/zuiItMvDPIFO
+                        J6                   8SGG/LBAOe      Ti   Ixix0AFKED4c   cA6 GAAPq9SHr4 8xuvdgSM70qQBNVF4xAsWlL0KTtQpm3x
+                        J                    QZkrIL9Zpi2         5Vg  xVOmJhS/s    t0NGr98yYK6 Gnffohskr11w5S017ro7oKWWHkKFud9wG
+                       8S                    GdT+w1fzQbQI        0t   T EoOA7diL    ln1sqcj/V4K icevytq JnM38Sijc1ZnHkzOr5SuL2Fu
+                      Ws                      xXdK5HV1ZXM2      gdx  G3 QuZ7d 2PV   Qj+K4a2ssrLYkhgh    iySL2C/7Wn5HBArAyiB38zk9
+                      l                       YBIjtoU7Fb3EL     JY   BS BrviuY 0c   R4GOgRq/cyHPv6      CcVBT/LuopCRfuocGNT5PvJk
+                     4m                       ERxCMQOdsTF1ME    j   Gq  +I  Cs cr3  ogj3Mc+ZbPg9z      ssuvhnGxy6X0d+SaJcfbqRQEC
+                     c                        d0TLS7395/FPJo1   r   Wb  u9  7Wd O7  3mjDzXFAnHb6      r2YfaTDZUp0u7u6nxtf9G8/gsr
+                    H                         VJjuRnYn1xb7X21q m    gG w0X   mSXcvhWXh7F2xi7ZujzM  uhFO7tAowTz2z9eKUKutzbAfE2Fej
+                    X                         7QtOmQu1Uwi8ebg89kA   V8 gfF    WVLSYi7UY0nbQSlLrELY9yXrxXrRYA4MfHDzJvNm0xCqUZZYfu
+@$ 
+

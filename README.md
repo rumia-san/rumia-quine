@@ -4,11 +4,32 @@ My simple quine programs : )
 Including normal quines, Ouroboros quines and ASCII Art quines.
 
 ## ASCII Art Quine
+
+### Normal ASCII Art Quine
+
 I have implemented a simple ASCII art quine program. The ruby program `./ascii_quine/rumia_ascii.rb` is implemented using eval and lambda. It is **not just an ASCII Art but also a Quine program**, which means the output of this program is its own source code. You could run the script `./ascii_quine/check_output.sh` to verify.
 
 Here is the screenshot:
 
 <img src="./ascii_quine/rumia_ascii.png" alt="Screenshot of the output of rumia_ascii.rb" width="50%" height="50%">
+
+### Ouroboros ASCII Art Quine
+
+There is an Ouroboros ASCII Quine as well. The ruby program `./ascii_quine/cirno.rb` will print another ASCII Art **Komeji Koishi**. Then the **Komeji Koishi** will ASCII Art print **Rumia**. Finally, **Rumia** will print **Cirno** again. You could check the file `cirno_result.txt` to view these results.
+
+Here are the screenshots:
+
+<img src="./ascii_quine/cirno.png" alt="Screenshot of the output of cirno.rb" width="50%" height="50%">
+
+<img src="./ascii_quine/koishi.png" alt="Screenshot of the output of koishi.rb" width="50%" height="50%">
+
+<img src="./ascii_quine/rumia.png" alt="Screenshot of the output of rumia.rb" width="50%" height="50%">
+
+You could run the script `./ascii_quine/check_output.sh` to verify.
+
+The image `./ascii_quine/src/cirno.jpg` is created by Zhihu user [天才琪露诺](https://www.zhihu.com/people/Genius-Cirno)
+
+The image `./ascii_quine/src/koishi.jpg` is created by Zhihu user [古明地恋](https://www.zhihu.com/people/lsw-51-43)
 
 ## Normal Quine
 I have implemented normal quine using different langages.
