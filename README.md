@@ -7,11 +7,20 @@ Including normal quines, Ouroboros quines and ASCII Art quines.
 
 ### Normal ASCII Art Quine
 
-I have implemented a simple ASCII art quine program. The ruby program `./ascii_quine/rumia_ascii.rb` is implemented using eval and lambda. It is **not just an ASCII Art but also a Quine program**, which means the output of this program is its own source code. You could run the script `./ascii_quine/check_output.sh` to verify.
+I have implemented a simple ASCII art quine program.
+The ruby program `./ascii_quine/rumia_ascii.rb` and `./ascii_quine/rumia_ascii2.rb` are implemented using eval and lambda.
+It is **not just an ASCII Art but also a Quine program**, which means the output of this program is its own source code.
+You could run the script `./ascii_quine/check_output.sh` to verify.
 
 Here is the screenshot:
 
+`./ascii_quine/rumia_ascii.rb`
+
 <img src="./ascii_quine/rumia_ascii.png" alt="Screenshot of the output of rumia_ascii.rb" width="50%" height="50%">
+
+`./ascii_quine/rumia_ascii2.rb`
+
+<img src="./ascii_quine/rumia_ascii2.png" alt="Screenshot of the output of rumia_ascii.rb" width="50%" height="50%">
 
 ### Ouroboros ASCII Art Quine
 

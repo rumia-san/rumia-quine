@@ -11,6 +11,7 @@ function check_ruby()
 
 mkdir -p output
 check_ruby "./rumia_ascii.rb" "./output/rumia_ascii.rb"
+check_ruby "./rumia_ascii2.rb" "./output/rumia_ascii2.rb"
 
 interpret_exec "ruby" "cirno.rb" "./output/koishi.rb"
 interpret_exec "ruby" "./output/koishi.rb" "./output/rumia.rb"
